@@ -1,0 +1,6 @@
+@ApiBanane_HostAddress = http://localhost:5003
+
+GET {{ApiBanane_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
