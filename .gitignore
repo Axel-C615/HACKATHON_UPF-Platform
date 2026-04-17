@@ -1,1 +1,62 @@
 .vs/
+# Dependencies
+node_modules/
+**/node_modules/
+ 
+# Environment secrets — NEVER commit these
+.env
+**/.env
+!**/.env.example
+.env.development
+ 
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+ 
+# Uploads (user files — use S3 in production)
+backend/uploads/
+ 
+# Logs
+*.log
+logs/
+**/logs/
+ 
+# OS files
+.DS_Store
+Thumbs.db
+ 
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+ 
+# Prisma
+backend/prisma/*.db
+backend/prisma/*.db-journal
+ 
+# WhatsApp Web.js (Puppeteer/Chromium session data)
+backend/.wwebjs_auth/
+backend/.wwebjs_cache/
+# Backup files
+*.gitignore~
+*~
+
+# Backend C# / .NET
+*.user
+*.suo
+.vs/
+bin/
+obj/
+*.dll
+*.exe
+appsettings.Development.json
+
+# Frontend React / Node
+node_modules/
+dist/
+.env
+.env.local
+build/
