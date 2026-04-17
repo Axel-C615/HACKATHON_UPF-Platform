@@ -17,7 +17,7 @@ builder.Services.AddControllers()
         o.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         o.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
     });
-builder.Services.AddScoped<CreateTable>();
+builder.Services.AddScoped<BananeDb>();
 
 // Add services to the container.
 

@@ -1129,42 +1129,6 @@
     ]
   },
   {
-    "ContainingType": "ApiBanane.Controllers.RequeteEtudiantController",
-    "Method": "Create",
-    "RelativePath": "api/RequeteEtudiant/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "ApiBanane.ObjetMDTO.CreateRequeteEtudiantDTO",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ApiBanane.Controllers.RequeteEtudiantController",
-    "Method": "GetAllForAdmin",
-    "RelativePath": "api/RequeteEtudiant/GetAllForAdmin",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Banane.ObjetService.RequeteEtudiantListRow, Banane, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "ApiBanane.Controllers.UtilisateurController",
     "Method": "GetAllUtilisateur",
     "RelativePath": "api/Utilisateur/GetAllUtilisateur",

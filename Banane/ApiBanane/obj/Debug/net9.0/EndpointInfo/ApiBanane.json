@@ -2035,75 +2035,6 @@
         }
       }
     },
-    "/api/RequeteEtudiant/Create": {
-      "post": {
-        "tags": [
-          "RequeteEtudiant"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateRequeteEtudiantDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateRequeteEtudiantDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateRequeteEtudiantDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/RequeteEtudiant/GetAllForAdmin": {
-      "get": {
-        "tags": [
-          "RequeteEtudiant"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/RequeteEtudiantListRow"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/RequeteEtudiantListRow"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/RequeteEtudiantListRow"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/api/Utilisateur/GetUtilisateurById/{id}": {
       "get": {
         "tags": [
@@ -2313,24 +2244,6 @@
           "idCreateur": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "CreateRequeteEtudiantDTO": {
-        "required": [
-          "message",
-          "objet"
-        ],
-        "type": "object",
-        "properties": {
-          "objet": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "message": {
-            "minLength": 1,
-            "type": "string"
           }
         },
         "additionalProperties": false
@@ -2849,40 +2762,6 @@
         },
         "additionalProperties": false
       },
-      "RequeteEtudiantListRow": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "submittedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "studentId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "studentDisplayName": {
-            "type": "string",
-            "nullable": true
-          },
-          "studentEmail": {
-            "type": "string",
-            "nullable": true
-          },
-          "subject": {
-            "type": "string",
-            "nullable": true
-          },
-          "message": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "UTILISATEUR": {
         "type": "object",
         "properties": {
@@ -2965,9 +2844,6 @@
     },
     {
       "name": "NiveauScolaire"
-    },
-    {
-      "name": "RequeteEtudiant"
     },
     {
       "name": "Utilisateur"

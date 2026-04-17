@@ -16,11 +16,11 @@ namespace Banane.ObjetService
 {
     public class RepositoryService <T> : IRepositoryService <T> where T : class
     {
-        protected readonly CreateTable _context;
+        protected readonly BananeDb _context;
         protected readonly DbSet<T> _dbSet;
         //public PERSONNE P;
 
-        public RepositoryService(CreateTable createtable)
+        public RepositoryService(BananeDb createtable)
         {
             _context = createtable;
             _dbSet = _context.Set<T>();

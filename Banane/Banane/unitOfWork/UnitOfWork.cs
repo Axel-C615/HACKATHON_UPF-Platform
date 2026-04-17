@@ -13,7 +13,7 @@ namespace Banane.unitOfWork
 {
     public  class UnitOfWork : IUnitOfWork
     {
-        private readonly CreateTable _context;
+        private readonly BananeDb _context;
         public IRepositoryService<ADMINISTRATEUR> Adminisrateurs { get; }
         public IRepositoryService<CONVERSATION> Conversations { get; }
         public IRepositoryService<DOCUMENT> Documents { get; }
@@ -28,7 +28,7 @@ namespace Banane.unitOfWork
         public IRepositoryService<FILIERE> Filieres { get; }
         
 
-        public UnitOfWork(CreateTable context)
+        public UnitOfWork(BananeDb context)
         {
             _context = context;
             // Instanciation de chaque repository avec le même DbContext

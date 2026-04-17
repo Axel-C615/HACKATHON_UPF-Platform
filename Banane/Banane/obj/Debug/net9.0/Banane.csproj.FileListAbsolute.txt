@@ -144,3 +144,4 @@ C:\Users\pc\Desktop\Projet H\Banane\Banane\obj\Debug\net9.0\refint\Banane.dll
 C:\Users\pc\Desktop\Projet H\Banane\Banane\obj\Debug\net9.0\Banane.pdb
 C:\Users\pc\Desktop\Projet H\Banane\Banane\obj\Debug\net9.0\Banane.genruntimeconfig.cache
 C:\Users\pc\Desktop\Projet H\Banane\Banane\obj\Debug\net9.0\ref\Banane.dll
+C:\Users\pc\Desktop\Projet H\Banane\Banane\obj\Debug\net9.0\Banane.sourcelink.json
