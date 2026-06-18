@@ -14,5 +14,7 @@ namespace ApiBanane.ObjetMDTO
 
         [Required]
         public string Matricule { get; set; }
+
+        public string? MotDePasse { get; set; } // ← AJOUTER (optionnel)
     }
 }

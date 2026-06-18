@@ -78,7 +78,9 @@ namespace ApiBanane.Controllers
                 return BadRequest(ModelState);
             try
             {
-                string clearPassword = GeneratePassword();
+                string clearPassword = !string.IsNullOrWhiteSpace(Administrateur.MotDePasse)
+    ? Administrateur.MotDePasse
+    : GeneratePassword();
 
                 ADMINISTRATEUR Adminitrateur1 = new ADMINISTRATEUR(Administrateur.Nom, Administrateur.Prenom,
                     Administrateur.Email, BCrypt.Net.BCrypt.HashPassword(clearPassword));

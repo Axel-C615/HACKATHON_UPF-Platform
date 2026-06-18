@@ -16,6 +16,8 @@ namespace ApiBanane.ObjetMDTO
         [Required]
         public int IdFiliere { get; set; }
 
+        public string? MotDePasse { get; set; } // ← AJOUTER (optionnel)
+
         /// <summary>Niveau scolaire (optionnel mais recommandé pour lier l’étudiant à une année).</summary>
         public int? IdNiveauScolaire { get; set; }
     }
