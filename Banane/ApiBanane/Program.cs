@@ -109,11 +109,9 @@ var app = builder.Build();
 app.UseCors("React");
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+// APRÈS (Swagger toujours actif)
+app.UseSwagger();
+app.UseSwaggerUI();
 
 
 app.UseStaticFiles();
