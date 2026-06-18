@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="g3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="650" fill="url(#g3)" />
+  <rect x="140" y="160" width="390" height="280" rx="28" fill="rgba(255,255,255,0.14)" />
+  <rect x="660" y="190" width="360" height="280" rx="28" fill="rgba(255,255,255,0.18)" />
+  <text x="80" y="120" fill="#fff" font-family="Segoe UI, sans-serif" font-size="72" font-weight="800">Salles modernes</text>
+  <text x="80" y="200" fill="rgba(255,255,255,0.92)" font-family="Segoe UI, sans-serif" font-size="28">Espaces pédagogiques équipés</text>
+</svg>

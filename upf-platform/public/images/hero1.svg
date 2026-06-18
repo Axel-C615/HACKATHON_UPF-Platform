@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2b6cb0" />
+      <stop offset="100%" stop-color="#7f9cf5" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="650" fill="url(#g1)" />
+  <circle cx="300" cy="350" r="180" fill="rgba(255,255,255,0.15)" />
+  <circle cx="900" cy="250" r="140" fill="rgba(255,255,255,0.12)" />
+  <text x="80" y="120" fill="#fff" font-family="Segoe UI, sans-serif" font-size="72" font-weight="800">Campus UPF</text>
+  <text x="80" y="200" fill="rgba(255,255,255,0.85)" font-family="Segoe UI, sans-serif" font-size="28">Une belle entrée sur le campus</text>
+</svg>
